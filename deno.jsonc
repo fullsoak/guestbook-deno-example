@@ -9,6 +9,7 @@
     // see https://docs.deno.com/runtime/reference/jsx/#jsx-precompile-transform
     "jsx": "precompile",
     "jsxImportSource": "preact",
-    "jsxPrecompileSkipElements": ["a", "link"]
+    "jsxPrecompileSkipElements": ["a", "link"],
+    "experimentalDecorators": false // only needed for Deno Deploy (for now)
   }
 }
