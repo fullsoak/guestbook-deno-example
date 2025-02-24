@@ -19,7 +19,9 @@ export const Home: FunctionComponent<HomeProps> = () => {
             <p>List of entries</p>
             <ul>
               <li>entry 1</li>
-              <li><a href="/entry/foo">entry foo</a></li>
+              <li>
+                <a href="/entry/foo">entry foo</a>
+              </li>
               <li>honorary entry: {GROOT_SAYS}</li>
             </ul>
             <section>

@@ -9,6 +9,8 @@ export const Entry: FunctionComponent<EntryProps> = ({ id }) => (
     <h1>title of entry {id}</h1>
     <div>content of entry {id}</div>
     <br />
-    <div><a href="/">Back</a></div>
+    <div>
+      <a href="/">Back</a>
+    </div>
   </section>
 );
