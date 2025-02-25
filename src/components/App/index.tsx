@@ -28,7 +28,6 @@ export const App: FunctionComponent<AppProps> = (
 ) => {
   locationStub(path);
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(isInitiallyLoggedIn);
-  // if (!globalThis.history) globalThis.history = { pushState: () => {}, replaceState: () => {}, state: {} } as any
   return (
     <AppContext.Provider value={{ isLoggedIn, setIsLoggedIn }}>
       <LocationProvider scope="/">
