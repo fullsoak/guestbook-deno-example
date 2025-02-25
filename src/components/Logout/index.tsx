@@ -4,7 +4,7 @@ import { type RoutableProps, useLocation } from "preact-iso";
 import { useContext } from "preact/hooks";
 import { AppContext } from "../../contexts/AppContext.ts";
 
-const res = await fetch(getOrigin() + "/logout", { method: "post" });
+const res = await fetch(getOrigin() + "/api/logout", { method: "post" });
 
 export const Logout: FunctionComponent<RoutableProps> = () => {
   const { setIsLoggedIn } = useContext(AppContext);

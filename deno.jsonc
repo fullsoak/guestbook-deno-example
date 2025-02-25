@@ -1,8 +1,9 @@
 {
   "imports": {
-    "fullsoak": "jsr:@fullsoak/fullsoak@^0.11.0",
-    "preact": "npm:preact@^10.26.2",
-    "preact-iso": "npm:preact-iso@^2.9.0"
+    "fullsoak": "jsr:@fullsoak/fullsoak@^0.13.1-alpha.1",
+    "preact": "npm:preact@10.26.2",
+    "preact-iso": "npm:preact-iso@^2.9.0",
+    "superoak": "https://deno.land/x/superoak@4.8.1/mod.ts"
   },
   "nodeModulesDir": "auto",
   "compilerOptions": {
@@ -11,5 +12,9 @@
     "jsxImportSource": "preact",
     "jsxPrecompileSkipElements": ["a", "link"],
     "experimentalDecorators": false // only needed for Deno Deploy (for now)
+  },
+  "tasks": {
+    "dev": "deno -A --watch src/main.ts",
+    "test": "deno test -A --trace-leaks"
   }
 }
